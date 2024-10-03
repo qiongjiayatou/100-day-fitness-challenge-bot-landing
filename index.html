@@ -8,98 +8,134 @@
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">100DaysChallenge</div>
-            <button class="cta-button">Join Now</button>
-        </nav>
-    </header>
+    <div class="min-h-screen bg-gradient-to-b from-blue-100 to-blue-200">
+        <header class="container mx-auto px-4 py-8">
+            <nav class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-600">100DaysChallenge</div>
+                <button class="btn btn-outline">Join Now</button>
+            </nav>
+        </header>
 
-    <main>
-        <section class="hero">
-            <h1>100 Days of Activity Challenge</h1>
-            <p>Support your friends, stay active together, and achieve your fitness goals!</p>
-            <button class="cta-button">Start Your Challenge <i data-feather="arrow-right"></i></button>
-        </section>
+        <main class="container mx-auto px-4 py-12">
+            <section class="text-center mb-16">
+                <h1 class="text-4xl md:text-6xl font-bold text-blue-800 mb-6">
+                    100 Days of Activity Challenge
+                </h1>
+                <p class="text-xl text-blue-600 mb-8">
+                    Support your friends, stay active together, and achieve your fitness goals!
+                </p>
+                <button class="btn btn-primary text-lg">
+                    Start Your Challenge <i data-feather="arrow-right" class="ml-2"></i>
+                </button>
+            </section>
 
-        <section class="features">
-            <div class="feature-card">
-                <i data-feather="check-circle" class="feature-icon"></i>
-                <h2>Daily Activities</h2>
-                <p>Choose from pull-ups, push-ups, sit-ups, and more. Customize your challenge!</p>
-            </div>
-            <div class="feature-card">
-                <i data-feather="users" class="feature-icon"></i>
-                <h2>Supportive Community</h2>
-                <p>Cheer on your friends and receive encouragement. We're in this together!</p>
-            </div>
-            <div class="feature-card">
-                <i data-feather="trophy" class="feature-icon"></i>
-                <h2>Track Progress</h2>
-                <p>Monitor your improvement over 100 days and celebrate your achievements.</p>
-            </div>
-        </section>
+            <section class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="card">
+                    <div class="card-content">
+                        <i data-feather="check-circle" class="w-12 h-12 text-green-500 mb-4"></i>
+                        <h2 class="text-2xl font-semibold mb-2">Daily Activities</h2>
+                        <p class="text-gray-600">
+                            Choose from pull-ups, push-ups, sit-ups, and more. Customize your challenge!
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <i data-feather="users" class="w-12 h-12 text-blue-500 mb-4"></i>
+                        <h2 class="text-2xl font-semibold mb-2">Supportive Community</h2>
+                        <p class="text-gray-600">
+                            Cheer on your friends and receive encouragement. We're in this together!
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <i data-feather="trophy" class="w-12 h-12 text-yellow-500 mb-4"></i>
+                        <h2 class="text-2xl font-semibold mb-2">Track Progress</h2>
+                        <p class="text-gray-600">
+                            Monitor your improvement over 100 days and celebrate your achievements.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-        <section class="how-it-works">
-            <h2>How It Works</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Join the Bot</h3>
-                    <p>Add our Telegram bot to get started</p>
+            <section class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-800 mb-6">How It Works</h2>
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div>
+                        <div class="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4 mx-auto">1</div>
+                        <h3 class="text-xl font-semibold mb-2">Join the Bot</h3>
+                        <p class="text-gray-600">Add our Telegram bot to get started</p>
+                    </div>
+                    <div>
+                        <div class="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4 mx-auto">2</div>
+                        <h3 class="text-xl font-semibold mb-2">Set Your Goals</h3>
+                        <p class="text-gray-600">Choose your daily activities and targets</p>
+                    </div>
+                    <div>
+                        <div class="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4 mx-auto">3</div>
+                        <h3 class="text-xl font-semibold mb-2">Stay Active</h3>
+                        <p class="text-gray-600">Complete your activities and log them daily</p>
+                    </div>
+                    <div>
+                        <div class="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4 mx-auto">4</div>
+                        <h3 class="text-xl font-semibold mb-2">Support Others</h3>
+                        <p class="text-gray-600">Encourage your friends and celebrate together</p>
+                    </div>
                 </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Set Your Goals</h3>
-                    <p>Choose your daily activities and targets</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Stay Active</h3>
-                    <p>Complete your activities and log them daily</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Support Others</h3>
-                    <p>Encourage your friends and celebrate together</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="cta">
-            <div class="cta-content">
-                <h2>Join the Challenge Today!</h2>
-                <p>Start your 100-day journey to a healthier, more active lifestyle with the support of friends.</p>
-                <button class="cta-button">Get Started on Telegram <i data-feather="message-circle"></i></button>
-            </div>
-            <div class="cta-image">
-                <img src="https://placehold.co/400x300" alt="People exercising together" width="400" height="300">
-            </div>
-        </section>
+            <section class="bg-white rounded-lg shadow-xl p-8 mb-16">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-6 md:mb-0">
+                        <h2 class="text-3xl font-bold text-blue-800 mb-4">Join the Challenge Today!</h2>
+                        <p class="text-xl text-gray-600 mb-6">
+                            Start your 100-day journey to a healthier, more active lifestyle with the support of friends.
+                        </p>
+                        <button class="btn btn-primary text-lg">
+                            Get Started on Telegram <i data-feather="message-circle" class="ml-2"></i>
+                        </button>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/400x300" alt="People exercising together" class="rounded-lg shadow-md" width="400" height="300">
+                    </div>
+                </div>
+            </section>
 
-        <section class="testimonials">
-            <h2>What Our Users Say</h2>
-            <div class="testimonial-cards">
-                <div class="testimonial-card">
-                    <p>"This challenge has transformed my daily routine. The support from friends keeps me motivated!"</p>
-                    <p class="testimonial-author">- Alex</p>
+            <section class="text-center">
+                <h2 class="text-3xl font-bold text-blue-800 mb-6">What Our Users Say</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="italic mb-4">"This challenge has transformed my daily routine. The support from friends keeps me motivated!"</p>
+                            <p class="font-semibold text-blue-600">Alex</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="italic mb-4">"I never thought I could do 100 push-ups a day, but here I am, 50 days in and going strong!"</p>
+                            <p class="font-semibold text-blue-600">Sam</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="italic mb-4">"The best part is cheering on my friends. We're all improving together!"</p>
+                            <p class="font-semibold text-blue-600">Jordan</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-card">
-                    <p>"I never thought I could do 100 push-ups a day, but here I am, 50 days in and going strong!"</p>
-                    <p class="testimonial-author">- Sam</p>
-                </div>
-                <div class="testimonial-card">
-                    <p>"The best part is cheering on my friends. We're all improving together!"</p>
-                    <p class="testimonial-author">- Jordan</p>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <footer>
-        <p>&copy; 2024 100DaysChallenge. All rights reserved.</p>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-    </footer>
+        <footer class="bg-blue-800 text-white py-8">
+            <div class="container mx-auto px-4 text-center">
+                <p>&copy; 2024 100DaysChallenge. All rights reserved.</p>
+                <p class="mt-2">
+                    <a href="#" class="hover:underline">Privacy Policy</a> | <a href="#" class="hover:underline">Terms of Service</a>
+                </p>
+            </div>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>

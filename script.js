@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 
-    // Add animation to feature cards on scroll
-    const featureCards = document.querySelectorAll('.feature-card');
+    // Add animation to cards on scroll
+    const cards = document.querySelectorAll('.card');
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     }, observerOptions);
 
-    featureCards.forEach(card => {
+    cards.forEach(card => {
         card.style.opacity = 0;
         card.style.transform = 'translateY(50px)';
         card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
